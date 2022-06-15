@@ -84,7 +84,7 @@ int	main(int argc, char **argv, char **env)
 			{
 				close(tmp_fd);
 				close(fd[1]);
-				tmp_fd = dup(fd[0]);
+				tmp_fd = fd[0];
 			}
 		}
 	}
